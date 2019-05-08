@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/custom_view_background">
+
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/closeView"
+
+        android:layout_margin="8dp"
+        android:background="@drawable/close_36px"
+        android:backgroundTint="@android:color/white"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/playButton"
+        android:visibility="gone"
+        android:backgroundTint="@android:color/white"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_play_arrow_48px"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/pauseButton"
+        android:backgroundTint="@android:color/white"
+        android:background="@drawable/pause_font_awesome"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/fullScreenMode_Btn"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@android:color/white"
+        android:background="@drawable/ic_fullscreen_48px"
+        />
+
+    <com.example.nikhil.youtubeplayback.UI.CustomViewYoutube
+        android:layout_width="match_parent"
+        android:id="@+id/customYoutubeView"
+        android:background="@drawable/custom_view_background"
+        android:layout_height="200dp">
+
+    </com.example.nikhil.youtubeplayback.UI.CustomViewYoutube>
+
+</RelativeLayout>
